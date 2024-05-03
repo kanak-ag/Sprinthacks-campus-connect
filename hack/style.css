@@ -68,8 +68,8 @@ body a:visited{
   color: #fff;
 }
 .featured-content {
-  height: 400px;
-  padding: 50px;
+  height: 450px;
+  padding: 70px 50px 50px 50px;
 }
 .featured-title {
   width: 200px;
@@ -109,6 +109,12 @@ body a:visited{
   transition: all 1s ease-in-out;
   background-color: #151515;
 }
+
+.movie-list-item p{
+  font-size:12px;
+}
+
+
 @media (max-width:630px) and (min-width:300px) {
   .movie-list{
     width: 500px;
@@ -135,6 +141,9 @@ body a:visited{
     padding-top: 20px;
   }
 }
+
+
+
 .movie-list-item {
   margin-right: 30px;
   position: relative;
@@ -155,7 +164,7 @@ body a:visited{
 .movie-list-item-img {
   transition: all 1s ease-in-out;
   width: 270px;
-  height: 200px;
+  height: 170px;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -229,17 +238,20 @@ body a:visited{
   width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
-  background: linear-gradient(to bottom, rgba(163, 60, 60, 0.982), #31297d);
+  /* background-image: url(assets/movie-pic/1654292-h-ae7cb8e462bfdlfkjaskjdf.jpg) ;
+  background-repeat: no-repeat; */
+  /* background: linear-gradient(to bottom, rgba(163, 60, 60, 0.982), #31297d); */
+  background-color: #151515;
 }
 .watch a{
   text-decoration: none;
-  color: #000000;
+  color: #fff;
   font-size: 14px;
 }
 .watch-area1{
   width: 70%;
-  padding: 50px;
-  color: rgb(3, 3, 3);
+  padding: 50px 50px 10px 50px;
+  color: #fff;
 }
 .watch-area1 h1{
   font-size: 40px;
@@ -248,7 +260,7 @@ body a:visited{
   font-family: 'Montserrat', sans-serif;
 }
 .watch-area1 i{
-  color: black;
+  color: #fff;
 }
 .watch-area1 button{
   padding: 10px;
@@ -258,7 +270,14 @@ body a:visited{
 }
 .watch-area2{
   width: 30%;
-  padding: 60px;
+  padding: 60px 60px 10px 60px;
+  align-items: center;
+}
+.watch-area2-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 .watch-area2 img{
   border-radius: 20px;
@@ -266,7 +285,9 @@ body a:visited{
 .box-watch img{
   border-radius: 20px;
 }
-@media (max-width:850px) and (min-width:100px){
+
+
+@media (max-width:1050px) and (min-width:100px){
   .watch-area1{
     text-align: center;
     align-items: center;
@@ -277,28 +298,39 @@ body a:visited{
     width: 100%;
     text-align: center;
   }
+  .watch-area2-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 }
+
 
 
 
 
 
 footer {
-  width: 100%;
-  text-align: center;
+  color: white;
   background-color: #252525;
-  padding: 4px;
-  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 30px 20px 40px 20px;
   font-family: 'Montserrat', sans-serif;
 }
-footer a {
-  text-decoration: none;
-  color: var(--primary-text-color);
+
+.footer {
+  padding-top: 20px;
+  color: white;
+  width: 100%;
 }
-footer a:visited {
-  text-decoration: none;
-  color: var(--primary-text-color);
+
+.footer a {
+  font-size: 14px;
+  color: white;
 }
+
 .col-1 {
   padding-top: 10px;
   font-size: 35px;
@@ -307,7 +339,3 @@ footer a:visited {
 .col-2 {
   font-size: 15px;
 }
-/* .col-3 {
-  padding-bottom: 20px;
-  font-size: 18px;
-} */
